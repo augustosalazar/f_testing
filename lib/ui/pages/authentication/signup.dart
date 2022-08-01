@@ -77,6 +77,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       form!.save();
                       if (form.validate()) {
                         Get.to(LoginScreen(
+                            key: const Key('LoginScreen'),
                             email: _emailController.text,
                             password: _passwordController.text));
                       } else {
