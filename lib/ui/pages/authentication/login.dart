@@ -80,7 +80,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       if (form.validate()) {
                         if (widget.email == _emailController.text &&
                             widget.password == _passwordController.text) {
-                          Get.to(HomePage(
+                          Get.offAll(HomePage(
                             key: const Key('HomePage'),
                             loggedEmail: _emailController.text,
                             loggedPassword: _passwordController.text,
