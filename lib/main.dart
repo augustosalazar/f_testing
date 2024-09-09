@@ -16,7 +16,8 @@ class MyApp extends StatelessWidget {
         title: 'TextFields & Forms',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
         ),
         home: const LoginScreen(
           key: Key('LoginScreen'),
